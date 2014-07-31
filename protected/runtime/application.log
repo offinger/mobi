@@ -1405,3 +1405,48 @@ Stack trace:
 #4 /Applications/MAMP/htdocs/mobi/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
 #5 /Applications/MAMP/htdocs/mobi/index.php(11): CWebApplication->run()
 REQUEST_URI=/index.php/comments/json
+2014/07/31 11:53:30 [error] [php] Undefined variable: model (/Applications/MAMP/htdocs/mobi/protected/controllers/CommentsController.php:8)
+Stack trace:
+#0 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(286): CommentsController->runAction()
+#1 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(265): CommentsController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(282): CommentsController->run()
+#3 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/mobi/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/mobi/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2014/07/31 13:42:24 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/mobi/protected/controllers/CommentsController.php:28)
+Stack trace:
+#0 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(286): CommentsController->runAction()
+#1 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(265): CommentsController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(282): CommentsController->run()
+#3 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/mobi/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/mobi/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/comments/koment
+2014/07/31 13:44:38 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/mobi/protected/controllers/CommentsController.php:28)
+Stack trace:
+#0 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(286): CommentsController->runAction()
+#1 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(265): CommentsController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(282): CommentsController->run()
+#3 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/mobi/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/mobi/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/comments/koment
+2014/07/31 13:44:50 [error] [php] Undefined variable: status (/Applications/MAMP/htdocs/mobi/protected/controllers/CommentsController.php:32)
+Stack trace:
+#0 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(286): CommentsController->runAction()
+#1 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(265): CommentsController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(282): CommentsController->run()
+#3 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/mobi/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/mobi/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/comments/koment
+2014/07/31 13:45:31 [error] [php] Undefined variable: status (/Applications/MAMP/htdocs/mobi/protected/controllers/CommentsController.php:32)
+Stack trace:
+#0 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(286): CommentsController->runAction()
+#1 /Applications/MAMP/htdocs/mobi/yii/framework/web/CController.php(265): CommentsController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(282): CommentsController->run()
+#3 /Applications/MAMP/htdocs/mobi/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/mobi/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/mobi/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/comments/koment

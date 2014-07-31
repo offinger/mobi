@@ -1,4 +1,4 @@
-var test = angular.module('test', ['infinite-scroll']); 
+var test = angular.module('test', []); 
 
 	test.controller("temp", ['$scope','$http', function($scope, $http){ 
 
@@ -18,10 +18,22 @@ var test = angular.module('test', ['infinite-scroll']);
 			$scope.posts = $scope.posts.concat(data); 
 		}); 
    }
-});
+})
 
 	$scope.dzoni = function(){ 
-		// incrementing page counter for loading "next" page 
-		
-	}; 
+		//alert($scope.textbox);
+       $http({
+           method: 'POST',
+           url: 'http://mobi.local:8888/index.php/comments/koment',
+           data: {"ime":$scope.ime, "komentar":$scope.komentar}
+       }).success(function(data){
+               
+               $scope.posts.unshift({"ime":$scope.ime, "komentar":$scope.komentar});
+               $scope.ime = "";
+               $scope.komentar = "";
+
+           }).error(function(data, status, header, config){
+               alert('njet ok');
+           });
+	} 
 }]);

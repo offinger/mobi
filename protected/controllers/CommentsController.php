@@ -4,11 +4,8 @@ class CommentsController extends Controller
 {
 	function actionIndex()
 	{
-	     $model = new Comments(); //your own model goes here    
-	     $criteria = new CDbCriteria;  
-	     $data = Comments::model()->findAll($criteria);
 	     $this->render('index', array(
-	     	'model' => $model,
+
 	     ));
 	}
 	 
@@ -25,11 +22,21 @@ class CommentsController extends Controller
 	    ));
 	}
 
-	
+	public function actionKoment(){
+		$data = json_decode(file_get_contents("php://input"));
+		$model = new Comments();
+		$model->ime = $data->ime;
+		$model->komentar = $data->komentar;
+		$model->save();
+
+		header("HTTP/1.1 "."200");
+       	header("Content-Type: application/json");
+       	echo "ok";
+	}
 
 	public function actionJson(){
 		$num = $_GET['num'];
-		$limit = 2;
+		$limit = 3;
 		$criteria = new CDbCriteria();
 		$criteria->offset = ($num-1)*$limit;
 		$criteria->limit = $limit;
